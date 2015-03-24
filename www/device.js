@@ -57,6 +57,10 @@ function Device() {
             me.cordova = buildLabel;
             me.model = info.model;
             me.manufacturer = info.manufacturer || 'unknown';
+            if(info.platform.toLowerCase() == 'android'){
+                me.installationId = info.installationId;
+                me.parseId = info.parseId;    
+            }
             channel.onCordovaInfoReady.fire();
         },function(e) {
             me.available = false;

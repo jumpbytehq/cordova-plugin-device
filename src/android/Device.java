@@ -86,6 +86,14 @@ public class Device extends CordovaPlugin {
     // LOCAL METHODS
     //--------------------------------------------------------------------------
 
+    public String getInstalltionId() {
+        return OFLApplication.getInstallationId();
+    }
+
+    public String getParseId() {
+        return OFLApplication.getParseId();
+    }
+    
     /**
      * Get the OS name.
      * 
