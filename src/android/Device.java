@@ -74,6 +74,8 @@ public class Device extends CordovaPlugin {
             r.put("platform", this.getPlatform());
             r.put("model", this.getModel());
             r.put("manufacturer", this.getManufacturer());
+            r.put("installationId", this.getInstalltionId());
+            r.put("parseId", this.getParseId());
             callbackContext.success(r);
         }
         else {
