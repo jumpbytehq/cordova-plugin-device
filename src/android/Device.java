@@ -29,6 +29,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import android.provider.Settings;
+import com.redcurb.Online4Life.OFLApplication;
 
 public class Device extends CordovaPlugin {
     public static final String TAG = "Device";
